@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+}
+body, html{
+    height:100%;
+    width:100%;
+}
+h1{
+    font-size:3rem;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background:rgba(28, 161, 82, 1);
+    color:white;
+}
+#userWord{
+    letter-spacing: 1rem;
+    font-weight: bold;
+    margin-bottom:1em;
+    font-size:2em;
+}
+#gameStatus{
+    padding:2.5%;
+}
+#game{
+    margin: 1%  auto;
+    overflow:auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+#letters{
+    height:100%;
+    width:50%;
+    float:left;
+    padding:1%;
+}
+#imgArea{
+    padding:1%;
+    height:100%;
+    margin-left:2%;
+    float:left;
+}
+
+.letter{
+    width:10px;
+    text-align:center;
+    color:black;
+    padding:1.6em;
+    border:1px solid white;
+    border-radius:5%;
+    margin:0.125em;
+    background:white;
+}
+.row{
+    display:flex;
+    flex-wrap:wrap;
+}
+.used{
+    opacity: 0.35;
+}
+#infoField{
+    color:white;
+    font-weight:bold;
+    width:100%;
+    text-align: center;
+}
+header h1{
+    background:white;
+    color:black;
+    text-align:center;
+}
+
+#nextBtn{
+    letter-spacing:0.15em;
+}
+
+
+
+@media screen and (max-width: 1230px) {
+    .letter{
+        padding:0px;
+        width:40px;
+        height:28.8px;
+        text-align:center;
+    }
+}
+@media screen and (max-width: 930px) {
+    .letter{
+        padding:0px;
+        width:28.8px;
+        height:28.8px;
+        text-align:center;
+    }
+}
+@media screen and (max-width: 655px) {
+    h1{
+        font-size:2rem;
+    }
+    .letter{
+        width:25px;
+    }
+    #game{
+        flex-direction:column;
+    }
+    #imgArea{
+        margin:0;
+    }
+}
+@media screen and (max-width: 570px) {
+    .letter{
+        width:20px;
+    }
+    #game{
+        flex-direction:column;
+    }
+    #imgArea{
+        margin:0;
+    }
+}
+@media screen and (max-width: 485px) {
+    .letter{
+        width:15px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .letter{
+        width:12.5px;
+    }
+}

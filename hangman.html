@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js.js"></script>
+    <script src="words.js"></script>
+	<script src="wordsFilter.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hangman</h1>
+    </header>
+    <div id="wrapper">
+        <section id="infoField">
+             <section id="gameStatus">
+                <p id="userWord"></p>
+                <p id="message"></p>
+                <p>Übrige Versuche: <span id="lives">10</span></p>                    <button id="nextBtn">Nächstes Wort</button>
+                </section>
+        </section>
+        <section id="game">
+            <section id="letters">
+                <div class="row">
+                    <span id="a" class="letter">A</span>
+                    <span id="b" class="letter">B</span>
+                    <span id="c" class="letter">C</span>
+                    <span id="d" class="letter">D</span>
+                    <span id="e" class="letter">E</span>                        <span id="f" class="letter">F</span>
+                    <span id="g" class="letter">G</span>
+                    <span id="h" class="letter">H</span>
+                    <span id="i" class="letter">I</span>
+                </div>
+                <div class="row">
+                    <span id="j" class="letter">J</span>
+                    <span id="k" class="letter">K</span>
+                    <span id="l" class="letter">L</span>
+                    <span id="m" class="letter">M</span>
+                    <span id="n" class="letter">N</span>
+                    <span id="o" class="letter">O</span>
+                    <span id="p" class="letter">P</span>
+                    <span id="q" class="letter">Q</span>
+                    <span id="r" class="letter">R</span>
+                </div>
+                <div class="row">
+                    <span id="s" class="letter">S</span>
+                    <span id="t" class="letter">T</span>
+                    <span id="u" class="letter">U</span>
+                    <span id="v" class="letter">V</span>
+                    <span id="w" class="letter">W</span>
+                    <span id="x" class="letter">X</span>
+                    <span id="y" class="letter">Y</span>
+                    <span id="z" class="letter">Z</span>
+                </div>
+                <div class="row">
+                    <span id="ö" class="letter">Ö</span>
+                    <span id="ä" class="letter">Ä</span>
+                    <span id="ü" class="letter">Ü</span>
+                </div>
+            </section>
+            <section id="imgArea">
+                    <img id="hangman" src="hangmanIMG/10.png">
+            </section>
+            </section>
+        </div>
+</body>
+</html>
